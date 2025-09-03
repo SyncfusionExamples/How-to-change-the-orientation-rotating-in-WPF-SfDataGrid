@@ -1,7 +1,7 @@
-# How to change the orientation rotating in WPF SfDataGrid
-The orientation of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) is customized horizontally by customizing style for SfDataGrid, [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) and [GridHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). SfDataGrid exposes properties: [CellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellStyle) and [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_HeaderStyle) that customizes the appearance of **GridCell** and **GridHeaderCellControl**.
+# How to change the orientation rotating in WPF DataGrid?
+The orientation of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid)(SfDataGrid), is customized horizontally by customizing style for DataGrid, [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) and [GridHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). DataGrid exposes properties: [CellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellStyle) and [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_HeaderStyle) that customizes the appearance of **GridCell** and **GridHeaderCellControl**.
 
-To change the orientation of SfDataGrid horizontally by using Style, CellStyle and HeaderStyle properties you can refer the following code example.
+To change the orientation of DataGrid horizontally by using Style, CellStyle and HeaderStyle properties you can refer the following code example.
 
  ```xml
  <syncfusion:SfDataGrid  x:Name="datagrid"
@@ -15,9 +15,9 @@ To change the orientation of SfDataGrid horizontally by using Style, CellStyle a
                          ColumnSizer="Star">
  ```
 
-The following section explains you how the **SfDataGrid** style (SfDataGridStyle), **GridCell** style (GridCellStyle) and **GridHeaderCellControl** style (GridHeaderCellControlStyle) are customized to change the orientation of SfDataGrid.
+The following section explains you how the **DataGrid** style (SfDataGridStyle), **GridCell** style (GridCellStyle) and **GridHeaderCellControl** style (GridHeaderCellControlStyle) are customized to change the orientation of DataGrid.
 
-SfDataGrid style (SfDataGridStyle) is customized to rotate its content (ScrollViewer and its panel) to 270 degree using rotate transformation. When rotating SfDataGrid panel ([VisualContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html)), the rows become columns and columns become rows and the RowHeight & ColumnWidth remain same. Now you can change the RowHeight to ColumnWidth value and vice versa in the VisualContainer **Loaded** event.
+DataGrid style (SfDataGridStyle) is customized to rotate its content (ScrollViewer and its panel) to 270 degree using rotate transformation. When rotating DataGrid panel ([VisualContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.VisualContainer.html)), the rows become columns and columns become rows and the RowHeight & ColumnWidth remain same. Now you can change the RowHeight to ColumnWidth value and vice versa in the VisualContainer **Loaded** event.
 
 Refer the following code example to customize the RowHeight and ColumnWidth in VisualContainer Loaded event.
  
@@ -31,7 +31,7 @@ private void PART_VisualContainer_Loaded(object sender, RoutedEventArgs e)
 } 
  ```
 
-Refer the following code example to rotate the SfDataGrid **ScrollViewer** and the panel inside it into 270 degree by customizing SfDataGrid style (**SfDataGridStyle**)
+Refer the following code example to rotate the DataGrid **ScrollViewer** and the panel inside it into 270 degree by customizing DataGrid style (**SfDataGridStyle**)
  
  ```xml
 <Style x:Key="SfDataGridStyle" TargetType="{x:Type syncfusion:SfDataGrid}">            
@@ -59,7 +59,7 @@ Refer the following code example to rotate the SfDataGrid **ScrollViewer** and t
  </Style> 
  ```
 
-When rotating SfDataGrid panel into 270 degree, vertical Scrollbar is rotated to horizontal (is displayed at the top) and the horizontal Scrollbar is moved as vertical (is displayed at the right side). Now you can change the Scrollbar displayed at the top to bottom by customizing the **ScrollViewer** Style (**ScrollViewerControlTemplate**). Refer the following code example.
+When rotating DataGrid panel into 270 degree, vertical Scrollbar is rotated to horizontal (is displayed at the top) and the horizontal Scrollbar is moved as vertical (is displayed at the right side). Now you can change the Scrollbar displayed at the top to bottom by customizing the **ScrollViewer** Style (**ScrollViewerControlTemplate**). Refer the following code example.
 
  ```xml
 <ControlTemplate x:Key="ScrollViewerControlTemplate" TargetType="{x:Type ScrollViewer}">
@@ -86,7 +86,7 @@ When rotating SfDataGrid panel into 270 degree, vertical Scrollbar is rotated to
       </Grid>
 </ControlTemplate> 
  ```
-When rotating SfDataGrid panel into 270 degree, **GridCell** content changed as Vertical. To display the cell content’s horizontally, you can rotate the GridCell content into 90 degree using rotate transformation by customizing GridCell style (GridCellStyle). Refer the following code example to rotate the GridCell content by customizing GridCell style (**GridCellStyle**).
+When rotating DataGrid panel into 270 degree, **GridCell** content changed as Vertical. To display the cell content’s horizontally, you can rotate the GridCell content into 90 degree using rotate transformation by customizing GridCell style (GridCellStyle). Refer the following code example to rotate the GridCell content by customizing GridCell style (**GridCellStyle**).
 
  ```xml
  <ControlTemplate x:Key="ValidationToolTipTemplate">
@@ -355,7 +355,7 @@ Like the GridCell, you can rotate the **GridHeaderCellControl** content into 90 
      </Setter>
  </Style>
  ```
-Refer the following screenshot where the orientation of SfDataGrid is changed (Column is displayed at the left side instead of top and records are displayed horizontally instead of vertically).
+Refer the following screenshot where the orientation of DataGrid is changed (Column is displayed at the left side instead of top and records are displayed horizontally instead of vertically).
 
  ![ChangingOrientationOfColumnsRows](https://support.syncfusion.com/kb/agent/attachment/article/3003/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyMDAzIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.xftVDW2XTPRoIEpW0rie2HPFvwQnP0vANzFFR_KzDs4)
 
