@@ -1,4 +1,4 @@
-# How to change the orientation rotating in WPF DataGrid?
+# How to change the orientation (rotating) in WPF DataGrid?
 
 The orientation of [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) , is customized horizontally by customizing style for DataGrid, [GridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridCell.html) and [GridHeaderCellControl](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). DataGrid exposes properties: [CellStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellStyle) and [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_HeaderStyle) that customizes the appearance of **GridCell** and **GridHeaderCellControl**.
 
