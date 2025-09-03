@@ -460,4 +460,4 @@ Refer the following screenshot where the orientation of DataGrid is changed (Col
 
 ![ChangingOrientationOfColumnsRows](https://support.syncfusion.com/kb/agent/attachment/article/3003/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyMDAzIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.xftVDW2XTPRoIEpW0rie2HPFvwQnP0vANzFFR_KzDs4)
 
-Take a moment to peruse the [WPF - DataGrid styles and templates](https://help.syncfusion.com/wpf/datagrid/styles-and-templates), to learn more about DataGrid styles and templates with examples.
+Take a moment to peruse the [WPF DataGrid - styles and templates](https://help.syncfusion.com/wpf/datagrid/styles-and-templates), to learn more about DataGrid styles and templates with examples.
